@@ -9,7 +9,7 @@ from pygridmap import gridtiler_raster
 
 
 gridtiler_raster.tiling_raster(
-    { "2020": {"file":'/home/juju/geodata/worldpop/ppp_2020_1km_Aggregated.tif', "band":1, 'no_data_values':[-3.40282e+38]} },
+    { "2020": {"file":'/home/juju/geodata/worldpop/ppp_2020_1km_Aggregated.tif', "band":1, 'no_data_values':[0,-3.40282e+38]} },
     "/home/juju/Bureau/worldpop_tiles",
     #crs="",
     #tile_size_cell=128,
