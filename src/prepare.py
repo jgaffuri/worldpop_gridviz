@@ -15,7 +15,7 @@ gridtiler_raster.tiling_raster(
     tile_size_cell=128,
     format="parquet",
     #parquet_compression="snappy",
-    num_processors_to_use=5
+    num_processors_to_use=8
     )
 
 
