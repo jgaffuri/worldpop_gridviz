@@ -8,14 +8,25 @@ from pygridmap import gridtiler_raster
 #Taille du Pixel	0.008333333300000000596,-0.008333333300000000596
 
 
+gridtiler_raster.tiling_raster(
+    { "2020": {"file":'/home/juju/geodata/worldpop/ppp_2020_1km_Aggregated.tif', "band":1, 'no_data_values':[-3.40282e+38]} },
+    "/home/juju/Bureau/worldpop_tiles",
+    #crs="",
+    #tile_size_cell=128,
+    format="csv",
+    #parquet_compression="snappy",
+    num_processors_to_use=5
+    )
 
+
+'''
 gridtiler_raster.tiling_raster(
     #input data
-    { "height": {"file":'assets/LU001_LUXEMBOURG_UA2012_DHM_V020.tif', "band":1, 'no_data_values':[255,0]} },
+    { "2020": {"file":'/home/juju/geodata/worldpop/ppp_2020_1km_Aggregated.tif', "band":1, 'no_data_values':[-3.40282e+38]} },
     #output folder
-    "assets/lux_height/",
+    "/home/juju/Bureau/worldpop_tiles",
     #resolution
-    10,
+    0.008333333300000000596,
     #extent
     4036900,
     2946000,
@@ -23,3 +34,4 @@ gridtiler_raster.tiling_raster(
     2956380,
     num_processors_to_use = 3
     )
+'''
