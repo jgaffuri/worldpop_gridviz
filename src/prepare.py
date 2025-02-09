@@ -7,12 +7,13 @@ from pygridmap import gridtiler_raster
 #Origine	-180.0012492650000127,83.9995831987100132
 #Taille du Pixel	0.008333333300000000596,-0.008333333300000000596
 
+res = "10"
 
 gridtiler_raster.tiling_raster(
     {
-        "2000": {"file":'/home/juju/geodata/worldpop/ppp_2000_1km_Aggregated.tif', "band":1, 'no_data_values':[0,-3.40282e+38]},
-        "2010": {"file":'/home/juju/geodata/worldpop/ppp_2010_1km_Aggregated.tif', "band":1, 'no_data_values':[0,-3.40282e+38]},
-        "2020": {"file":'/home/juju/geodata/worldpop/ppp_2020_1km_Aggregated.tif', "band":1, 'no_data_values':[0,-3.40282e+38]},
+        "2000": {"file":'/home/juju/geodata/worldpop/ppp_2000_'+res+'km_Aggregated.tif', "band":1, 'no_data_values':[0,-3.40282e+38]},
+        "2010": {"file":'/home/juju/geodata/worldpop/ppp_2010_'+res+'km_Aggregated.tif', "band":1, 'no_data_values':[0,-3.40282e+38]},
+        "2020": {"file":'/home/juju/geodata/worldpop/ppp_2020_'+res+'km_Aggregated.tif', "band":1, 'no_data_values':[0,-3.40282e+38]},
      },
     "pub/v1/",
     #crs="",
