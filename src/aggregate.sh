@@ -5,7 +5,7 @@ for year in "2000" "2010" "2020"; do
     for res in 10; do
         p=$(echo "$v * $res" | bc)
         echo "$year" "$res" "$v" "$p"
-        gdalwarp -tr $p $p -r sum -tap "/home/juju/geodata/worldpop/ppp_"$year"_1km_Aggregated.tif" /home/juju/geodata/worldpop/ppp_"$year"_"$res"km_Aggregated.tif
+        gdalwarp -tr $p $p -r sum "/home/juju/geodata/worldpop/ppp_"$year"_1km_Aggregated.tif" /home/juju/geodata/worldpop/ppp_"$year"_"$res"km_Aggregated.tif
     done
 done
 
