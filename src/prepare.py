@@ -15,7 +15,7 @@ gridtiler_raster.tiling_raster(
         "2010": {"file":'/home/juju/geodata/worldpop/ppp_2010_'+res+'km_Aggregated.tif', "band":1, 'no_data_values':[0,-3.40282e+38]},
         "2020": {"file":'/home/juju/geodata/worldpop/ppp_2020_'+res+'km_Aggregated.tif', "band":1, 'no_data_values':[0,-3.40282e+38]},
      },
-    "pub/v1/",
+    "pub/v1/"+res+"km/",
     #crs="",
     tile_size_cell=128,
     format="parquet",
